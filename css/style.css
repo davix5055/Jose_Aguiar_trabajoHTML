@@ -1,0 +1,317 @@
+/*Reset Pagina Web*/
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/*Estructura Basica Body*/
+
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Contenedores*/
+
+.contenedor{
+    width: 60%;
+    max-width: 800px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contenedor-full{
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+/*Encabezado*/
+
+header{
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    padding-bottom: 5px;
+    
+}
+
+/*Logo Principal*/
+
+.logo{
+    display: flex;
+}
+
+
+.logo img{
+    height: 50px;
+    width: 50px;
+    align-self: center;
+    margin-left: 10px;
+}
+
+.logo h1,h2{
+    align-self: center;
+    display: inline-block;
+    white-space: nowrap;
+    
+}
+
+/*Enlaces Navegacion Encabezado*/
+.enlaces{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    
+}
+
+
+
+a{
+
+    color: black;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 20px;
+    background-color: rgb(255, 111, 0);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+    
+    
+}
+
+a:hover{
+    color: white;
+}
+
+.active{
+    color: white;
+}
+
+
+/*Eslogan Pagina Web*/
+.eslogan{
+    align-self: center;
+    text-align: center;
+    margin-right: 20px;
+}
+
+
+/*Seccion Principal del Contenido*/
+section{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Seccion Calidad Index*/
+
+.informacioncalidad{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    background-color: rgb(255, 111, 0);
+}
+
+.informacioncalidad img{
+    height: 300px;
+    width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+    border-radius: 10px;
+}
+
+.informacioncalidad p{
+    max-width: 200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+    background-color: white;
+    z-index: 5;
+    display: inline-block;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 40px;
+    
+}
+
+/*Seccion Zapatos mas vendidos Index*/
+
+.topventas{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    
+}
+
+
+.topventas img{
+    width: 200px;
+    height: 200px;
+    box-shadow: 5px 4px 10px rgba(0, 0, 0, 1);
+}
+
+
+/*Seccion Galeria Productos*/
+
+.galeria{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    background-color: rgb(255, 111, 0);
+    gap: 10px;
+}
+
+.galeria img{
+    width: 200px;
+    height: 200px;
+    box-shadow: 0px 4px 10px black;
+    margin: 10px;
+    transition: transform 0.5s ease;
+    
+}
+
+.galeria img:hover{
+    transform: translateY(-5px);
+}
+
+.contenedor-full h3{
+    text-align: center;
+}
+
+.contenedor h3{
+    text-align: center;
+}
+
+
+
+/*Seccion Presupuesto Formulario*/
+
+form{
+    margin-top: 20px;
+    background-color: rgb(255, 111, 0);
+    border: 1px solid black;
+    height: 500px;
+}
+
+
+
+form label{
+    display: inline-block;
+    margin-top: 15px;
+    margin-right: 10px;
+    width: 100px;
+    color: white;
+    
+
+}
+
+form p{
+    color: white;
+}
+
+textarea{
+    width: 400px;
+    border: 2px solid black;
+}
+
+form input{
+    border-radius: 10px;
+    width: 200px;
+    padding: 5px;
+    border: 2px solid black;
+}
+
+
+form input[type=submit], input[type=reset]{
+    width: 150px;
+    background-color: black;
+    color: white;
+}
+
+
+/*Seccion Contacto Mapa*/
+.mapa{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 111, 0);
+    margin-top: 20px;
+    padding: 10px;
+   border: 2px solid black;
+}
+
+.mapa img{
+    border: 2px solid black;
+}
+
+.infocontacto{
+    margin-top: 10px;
+    text-align: center;
+    border: 1px solid white;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+
+
+/*Pie de Pagina*/
+
+footer{
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: small;
+    
+}
+
+.redessociales{
+    display: flex;
+    justify-content: center;
+}
+
+.redessociales a{
+    border: 0px;
+    background-color: black;
+}
+
+/*Ajuste Resolucion de Pantalla*/
+
+@media screen and (max-width:800px) {
+    /*Menu Navegacion*/
+
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-height: fit-content;
+
+    }
+
+    .enlaces{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+       
+
+    }
+
+    .enlaces a{
+        padding: 5px;
+        text-align: center;
+    }
+
+    /*Aplicar un "Wrap" en Galeria para que se vean mas comodamente las imagenes en "Productos"*/
+
+
+    .galeria{
+        flex-wrap: wrap;
+    }
+
+   
+}
